@@ -328,14 +328,14 @@ a {
     line-height: 130%; }
 
   .hero__image {
-    width: 370px;
+    width: 350px;
     height: 300px; } }
 .options {
   margin-top: -60px;
   z-index: 2; }
 
 .options .container {
-  max-width: 990px;
+  max-width: 1010px;
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -473,7 +473,7 @@ a {
 .line {
   content: "";
   display: block;
-  width: 341px;
+  width: 100%;
   height: 1px;
   margin: 0 auto;
   margin: 24px 0px;
@@ -675,6 +675,7 @@ a {
 .textarea {
   max-width: 780px;
   width: 100%;
+  padding: 5px 10px;
   margin-left: 50px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -741,10 +742,9 @@ a {
 
 .news__link {
   position: relative;
-  max-width: 680px;
-  background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%); }
+  max-width: 680px; }
 
-.news__link__image:hover {
+.news__link:hover {
   background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%); }
 
 .news__heading {
@@ -817,7 +817,12 @@ a {
   text-align: center;
   color: #ffffff;
   border: none;
-  background: transparent; }
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease; }
+
+.news__button:hover {
+  opacity: 0.8; }
 
 @media only screen and (max-width: 1200px) {
   .news__div {
@@ -997,19 +1002,25 @@ a {
 .question-answer {
   max-width: 580px;
   width: 100%;
-  margin-bottom: 16px;
-  background: rgba(255, 255, 255, 0.06);
+  margin-bottom: 16px; }
+
+.question-div {
+  width: 580px;
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-radius: 8px; }
+  border-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; }
 
-.question-div,
 .answer-div {
   width: 580px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-radius: 8px; }
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px; }
 
 .question-div {
   display: flex;
@@ -1058,6 +1069,10 @@ a {
   .answer-div {
     max-width: 780px;
     width: 100%; } }
+@media only screen and (max-width: 600px) {
+  .question__heading {
+    margin-bottom: 24px;
+    font-size: 24px; } }
 .footer {
   background: #0a0e15; }
 

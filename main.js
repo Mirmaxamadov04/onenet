@@ -3,19 +3,28 @@ document.querySelector(".hamburger").addEventListener("click", (evt) => {
   document.querySelector(".nav__list").classList.toggle("show");
   console.log("hey");
 });
+const arrowImgs = document.querySelectorAll(".question-div__image");
+const answerDivs = document.querySelectorAll(".answer-div");
 
-const arrowImg = document.querySelector(".question-div__image");
-const answerDiv = document.querySelector(".answer-div");
+arrowImgs.forEach((arrowImg, index) => {
+  arrowImg.addEventListener("click", (evt) => {
+    evt.preventDefault();
 
-arrowImg.addEventListener("click", (evt) => {
+    if (answerDivs[index].classList.contains("show")) {
+      console.log("true");
+      arrowImg.src = "./images/bottom-arrow.svg";
+    } else if (!answerDivs[index].classList.contains("show")) {
+      arrowImg.src = "./images/top-arrow.svg";
+    }
+
+    answerDivs[index].classList.toggle("show");
+  });
+});
+console.log(document.querySelector(".footer__logo"));
+
+document.querySelector(".footer__logo").addEventListener("click", (evt) => {
   evt.preventDefault();
+  console.log("hey");
 
-  if (answerDiv.classList.contains("show")) {
-    console.log("true");
-    arrowImg.src = "./images/bottom-arrow.svg";
-  } else if (!answerDiv.classList.contains("show")) {
-    arrowImg.src = "./images/top-arrow.svg";
-  }
-
-  answerDiv.classList.toggle("show");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });

@@ -14,12 +14,16 @@
 .news__link {
   position: relative;
   max-width: 680px;
+  // background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%);
+}
+
+.news__link:hover {
   background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%);
 }
 
-.news__link__image:hover {
-  background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%);
-}
+// .news__link__image:hover {
+//   background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%);
+// }
 
 .news__heading {
   padding-bottom: 25px;
@@ -103,6 +107,12 @@
   color: #ffffff;
   border: none;
   background: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.news__button:hover {
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 1200px) {
