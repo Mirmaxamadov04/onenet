@@ -932,7 +932,8 @@ a {
     line-height: 140%;
     text-align: center; } }
 .logos {
-  background-color: #090d14; }
+  background-color: #090d14;
+  overflow-x: hidden; }
 
 .logos .container {
   max-width: 100vw;

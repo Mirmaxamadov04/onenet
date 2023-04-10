@@ -1,5 +1,6 @@
 .logos {
   background-color: #090d14;
+  overflow-x: hidden;
 }
 
 .logos .container {
