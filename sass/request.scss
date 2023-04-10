@@ -1,0 +1,143 @@
+.request {
+  background-color: #090d14;
+}
+
+.request .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.request__heading {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+// .textarea {
+//   max-width: 780px;
+//   width: 100%;
+// }
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form > div:last-child {
+  margin-top: -90px;
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form > div > label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.form > div:nth-child(even) > label {
+  margin-left: 50px;
+}
+
+#name {
+  width: 350px !important;
+  width: 100%;
+}
+
+.input {
+  max-width: 350px;
+  width: 100%;
+  padding: 16px 15px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.4;
+  outline: none;
+}
+
+.textarea {
+  max-width: 780px;
+  width: 100%;
+  margin-left: 50px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.4;
+  outline: none;
+}
+
+.request__button {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 0px;
+  padding: 10px 65px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .textarea {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .textarea {
+    margin-left: 20px;
+  }
+
+  .request__heading {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form > div:last-child {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form > div:nth-child(even) > label {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .textarea {
+    margin-left: 0px;
+  }
+
+  .request__button {
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 10px 65px;
+  }
+}

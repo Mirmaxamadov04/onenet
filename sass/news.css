@@ -1,0 +1,222 @@
+.news {
+  background-color: #0f131a;
+}
+
+.news__div {
+  display: flex;
+}
+
+.news-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__link {
+  position: relative;
+  max-width: 680px;
+  background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%);
+}
+
+.news__link__image:hover {
+  background: linear-gradient(360deg, #090d14 34.72%, rgba(9, 13, 20, 0) 100%);
+}
+
+.news__heading {
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.news__link__heading {
+  margin-top: -120px;
+  padding-left: 20px;
+  max-width: 640px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.news__link__paragraph {
+  max-width: 640px;
+  width: 100%;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.news-right {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-right-info {
+  padding-left: 24px;
+}
+
+.news-right__link {
+  display: flex;
+}
+
+.news-right__heading:hover {
+  color: #ffc0ba;
+}
+
+.news-right__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #939191;
+}
+
+.news-right__heading {
+  margin-top: 12px;
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+  transition: 0.3s all ease;
+}
+
+.news-right__image {
+  margin-bottom: 20px;
+}
+
+.news-right__image:last-child {
+  margin: 0;
+}
+
+.news__button {
+  margin-left: auto;
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background: transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  .news__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .news-right {
+    margin-top: 30px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+  .news-right__link {
+    display: flex;
+    flex-direction: column;
+    max-width: 33%;
+  }
+  .news-right-info {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .news__link__image {
+    width: 500px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .news__link {
+    max-width: 580px;
+  }
+  .news__heading {
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+  .news__link__heading {
+    margin-top: -170px;
+    padding-left: 5px;
+    max-width: 480px;
+    width: 100%;
+  }
+  .news__link__paragraph {
+    max-width: 480px;
+    width: 100%;
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .news__link__image {
+    width: 375px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .news__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .news__heading {
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffffff;
+  }
+  .news__link__heading {
+    margin-top: -190px;
+    padding-left: 5px;
+    max-width: 370px;
+    width: 100%;
+  }
+  .news__link__paragraph {
+    max-width: 370px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .news-right {
+    margin-top: 30px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .news-right__link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  .news-right-info {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .news-right__image {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .news-right-info {
+    padding-bottom: 20px;
+  }
+  .news__button {
+    margin-top: -20px;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=news.css.map */

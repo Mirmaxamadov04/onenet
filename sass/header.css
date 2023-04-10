@@ -1,0 +1,194 @@
+.header {
+  background-color: #090d14;
+}
+
+.header .container {
+  padding-top: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  margin-top: 8px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-top: -20px;
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+.nav__logo:hover {
+  transform: translateY(-3px);
+}
+
+.nav__list {
+  padding-top: 14px;
+  max-width: 380px;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.nav__button-language {
+  position: relative;
+  padding: 14px;
+  padding-left: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: none;
+  transition: 0.3 all ease;
+  cursor: pointer;
+}
+
+.nav__button-language::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 30px;
+  top: 12px;
+  left: 15px;
+  background-repeat: no-repeat;
+  background-image: url("../images/global.svg");
+}
+
+.button {
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "salt" on;
+  color: #ffffff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #ff3e2d;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3 all ease;
+  cursor: pointer;
+}
+
+.nav__button {
+  padding: 12px 32px;
+}
+
+.nav__button-person {
+  padding: 11px;
+  background: #4318be;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3 all ease;
+  cursor: pointer;
+}
+
+.nav__button-language:hover,
+.button:hover,
+.nav__button-person:hover {
+  opacity: 0.8;
+}
+
+.nav__div-button {
+  margin-left: 10px;
+  display: flex;
+  max-width: 530px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__div-link {
+  padding-top: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.nav__div-link:hover {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.show {
+  display: block !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav__div-button {
+    max-width: 480px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .nav__list {
+    position: absolute;
+    flex-direction: column;
+    background-color: #090d14;
+    top: 21%;
+    left: 0px;
+    padding: 100px 30px;
+    display: none;
+  }
+  .hamburger {
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: block;
+  }
+  .hamburger-logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__item {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav__button-person,
+  .nav__button {
+    display: none;
+  }
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav__div-button {
+    max-width: 650px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=header.css.map */
